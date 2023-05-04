@@ -6,35 +6,18 @@ import styled from "styled-components";
 
 const ContactUs = () => {
   return (
-    <ContactStyle
-      exit="exit"
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      // style={{ background: "#fff" }}
-    >
-      <Title>
-        <Hide>
-          <motion.h2 variants={titleAnim} style={{ color: "#fff", fontWeight: '500' }}>Thanks for checking on me.</motion.h2>
-        </Hide>
-      </Title>
+    <ContactStyle>
       <div>
-        <Hide>
-          <Social variants={titleAnim}>
-            <h2 style={{fontWeight: '400', fontSize: '2rem'}}>You wanna chat about anything or follow my work?</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <h2 style={{fontSize: '1.5rem'}}>Can't wait to learn and hear from you...</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Social Media</h2>
-          </Social>
-        </Hide>
+        <h2 style={{ color: "#fff", fontWeight: '500' }}>Thanks for checking on me.</h2>
+        <p id="chat">You wanna chat about anything or follow my work?</p>
+        <h4>Can't wait to learn and hear from you...</h4>
+        <button>Let's Do This</button>
+        <p>
+            <a target="_blank" href="https://twitter.com/emily_tiampati" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter icons"></i></a>
+            <a target="_blank" href="https://github.com/sereyatiampati" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sereyatiampati/" rel="noopener noreferrer" title="Linkedin"><i class="fa-brands fa-linkedin icons"></i></a>
+        </p>
+        <p>Made by Emilly - as Herself</p>
       </div>
     </ContactStyle>
   );
@@ -49,9 +32,33 @@ const ContactStyle = styled(motion.div)`
     padding: 2rem;
     font-size: 1rem;
   }
+  h4{
+   border-bottom: 3px solid #23d997;
+   padding-bottom: 4px;
+   margin: 0 auto;
+   font-weight: 400;
+   font-style: italic;
+   width: 40%;
+  }
+  button{
+    padding: 20px 80px;
+    margin-top: 2.5rem;
+    border: 1px solid #23d997;
+    font-size: 1.5rem;
+  }
+  .icons{
+    font-size: 3.5rem;
+    margin-right: 3rem;
+    color: #3273dc;
+  }
+  #chat{
+    font-style: italic;
+    margin-top: 0;
+    font-weight: 400;
+  }
 `;
 const Title = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   color: black;
   text-align: center;
   @media (max-width: 1500px) {
