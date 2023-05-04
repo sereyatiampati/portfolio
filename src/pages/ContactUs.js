@@ -11,24 +11,22 @@ const ContactUs = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      style={{ background: "#fff" }}
+      // style={{ background: "#fff" }}
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>
+          <motion.h2 variants={titleAnim} style={{ color: "#fff", fontWeight: '500' }}>Thanks for checking on me.</motion.h2>
         </Hide>
       </Title>
       <div>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send Us A Message</h2>
+            <h2 style={{fontWeight: '400', fontSize: '2rem'}}>You wanna chat about anything or follow my work?</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send an email.</h2>
+            <h2 style={{fontSize: '1.5rem'}}>Can't wait to learn and hear from you...</h2>
           </Social>
         </Hide>
         <Hide>
@@ -44,7 +42,8 @@ const ContactUs = () => {
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
-  color: #353535;
+  color: white;
+  text-align: center;
   min-height: 90vh;
   @media (max-width: 1500px) {
     padding: 2rem;
@@ -52,8 +51,9 @@ const ContactStyle = styled(motion.div)`
   }
 `;
 const Title = styled.div`
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   color: black;
+  text-align: center;
   @media (max-width: 1500px) {
     margin-top: 5rem;
   }
@@ -70,8 +70,9 @@ const Circle = styled.div`
 const Social = styled(motion.div)`
   display: flex;
   align-items: center;
+  text-align: center;
   h2 {
-    margin: 2rem;
+    margin: 2rem 0;
   }
 `;
 

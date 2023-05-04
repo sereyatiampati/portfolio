@@ -3,17 +3,14 @@ import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { scrollReveal } from "../animation";
+
+
 
 const FaqSection = () => {
-  const [element, controls] = useScroll();
+
   return (
     <Faq
-      // variants={scrollReveal}
-      // ref={element}
-      // animate={controls}
-      // initial="hidden"
+
     >
       <h2>
         Any Questions <span>FAQ</span>
@@ -63,10 +60,10 @@ const FaqSection = () => {
           <div className="answer">
             <p>Twitter, Github, Linkedin or Send me an email</p>
             <p>
-            <a target="_blank" href="https://twitter.com/emily_tiampati" title="Twitter"><i class="fa-brands fa-twitter icons"></i></a>
-            <a target="_blank" href="https://github.com/sereyatiampati" title="Github"><i class="fa-brands fa-github icons"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/sereyatiampati/" title="Linkedin"><i class="fa-brands fa-linkedin icons"></i></a>
-            <a target="_blank" title="Gmail"><i class="fa-regular fa-envelope icons"></i></a>
+            <a target="_blank" href="https://twitter.com/emily_tiampati" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter icons"></i></a>
+            <a target="_blank" href="https://github.com/sereyatiampati" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sereyatiampati/" rel="noopener noreferrer" title="Linkedin"><i class="fa-brands fa-linkedin icons"></i></a>
+            <a target="_blank" href="mailto:emilytiampati@gmail.com" rel="noopener noreferrer" title="Gmail" ><i class="fa-regular fa-envelope icons"></i></a>
             </p>
           </div>
         </Toggle>
@@ -104,7 +101,7 @@ const Faq = styled(About)`
     font-size: 2.5rem;
     padding-right: 1.5rem;
   }
-  a {
+  div.answer a {
     text-decoration: none;
   }
 `;

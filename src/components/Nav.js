@@ -23,7 +23,7 @@ const Nav = () => {
           />
         </li>
         <li>
-          <Link to="/work">PROJECTS</Link>
+          <Link to="/projects">PROJECTS</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}

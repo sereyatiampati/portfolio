@@ -1,11 +1,11 @@
 import React from "react";
-import sereya from "../img/sereya.jpeg";
 import ems from "../img/ems.jpeg";
 import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
 import Wave from "./Wave";
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
   return (
@@ -29,7 +29,7 @@ const AboutSection = () => {
           I am a well organised, problem solver and a team player with attention to detail.
           If I am not coding, I am reading - I read a lot or I am cooking or watching The Office US - I am a HUGE fan!
         </motion.p>
-        <motion.button variants={fade}>View projects</motion.button>
+        <motion.button variants={fade}><Link to='/projects' style={{color: '#fff', textDecoration: 'none'}}>View projects</Link></motion.button>
       </Description>
       <Image>
         <motion.img variants={photoAnim} src={ems} alt="Emilly Tiampati" />
