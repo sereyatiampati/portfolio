@@ -10,49 +10,63 @@ const FaqSection = () => {
   const [element, controls] = useScroll();
   return (
     <Faq
-      variants={scrollReveal}
-      ref={element}
-      animate={controls}
-      initial="hidden"
+      // variants={scrollReveal}
+      // ref={element}
+      // animate={controls}
+      // initial="hidden"
     >
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How Do I Start?">
+        <Toggle title="What is my Techstack and Skillset">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Software immersive full stack development, implementation, testing and support in:</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-              autem accusamus ex laboriosam porro, adipisci quam voluptatum
-              magnam placeat corporis.
+              <ul>
+                <ul>
+                  <li>
+                    Ruby on Rails: Developing and Securing RESTful APIs and RESTful Web Services with Rails, development of SOAP
+                    Web Services with Rails, application of the Ruby on Rails Framework for Enterprise Web applications.,
+                    bootstrapping Web Applications with Ruby on Rails MVC, implementation of database management with ActiveRecord, template rendering with ActionView, and request handling with ActionController. Unit testing using RSpec.{" "}
+                  </li>
+                  <li>JavaScript: Client side application development with React JS, Bootsrap, HTML5 and CSS3</li>
+                </ul>
+                <li>
+                  {" "}
+                  Database Management; an understanding in structured query language (SQL) including PostgreSQL, and MySQL, knowledge of relational database management and object-oriented database management systems{" "}
+                </li>
+                <li>
+                  {" "}
+                  Information security comprising user authentication and cryptography{" "}
+                </li>
+                <li> Familiarity with the Agile Scrum Methodology in Software development and delivery. </li>
+                <li> Version Control Tools, i.e. Git </li>
+              </ul>
             </p>
           </div>
         </Toggle>
-        <Toggle title="Daily Schedule">
+        <Toggle title="Which Schools have I attended?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+              {" "}
+              2022 - 2023 || <span> Moringa School </span> || Software Immersive FullStack Development{" "}
+            </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-              totam.
+              {" "}
+              2014 - 2018 || <span> Dedan Kimathi University of Technology </span> || Bachelor of Science (BSc.)
+              Information Technology{" "}
             </p>
           </div>
         </Toggle>
-        <Toggle title="Diferrent Payment Methods">
+        <Toggle title="How to reach me?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Twitter, Github, Linkedin or Send me an email</p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, neque.
-            </p>
-          </div>
-        </Toggle>
-        <Toggle title="What Products do you offer.">
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, neque.
+            <a target="_blank" href="https://twitter.com/emily_tiampati" title="Twitter"><i class="fa-brands fa-twitter icons"></i></a>
+            <a target="_blank" href="https://github.com/sereyatiampati" title="Github"><i class="fa-brands fa-github icons"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sereyatiampati/" title="Linkedin"><i class="fa-brands fa-linkedin icons"></i></a>
+            <a target="_blank" title="Gmail"><i class="fa-regular fa-envelope icons"></i></a>
             </p>
           </div>
         </Toggle>
@@ -85,6 +99,13 @@ const Faq = styled(About)`
     p {
       padding: 1rem 0rem;
     }
+  }
+  .icons{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+  }
+  a {
+    text-decoration: none;
   }
 `;
 

@@ -5,7 +5,6 @@ import ml from "../img/machine-learning.svg"
 import is from "../img/confidential-information.svg"
 import fintech from "../img/fintech.svg"
 
-import money from "../img/money.svg";
 import home2 from "../img/home2.png";
 //Styles
 import { About, Description, Image } from "../styles";
@@ -13,14 +12,14 @@ import styled from "styled-components";
 import { scrollReveal } from "../animation";
 import { useScroll } from "./useScroll";
 
-const ServicesSection = () => {
+const InterestsSection = () => {
   const [element, controls] = useScroll();
   return (
     <Services
-      variants={scrollReveal}
-      animate={controls}
-      initial="hidden"
-      ref={element}
+      // variants={scrollReveal}
+      // animate={controls}
+      // initial="hidden"
+      // ref={element}
     >
       <Description>
         <h2>
@@ -94,4 +93,4 @@ const Card = styled.div`
   }
 `;
 
-export default ServicesSection;
+export default InterestsSection;
