@@ -1,5 +1,6 @@
 import React from "react";
 import sereya from "../img/sereya.jpeg";
+import ems from "../img/ems.jpeg";
 import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
@@ -20,7 +21,7 @@ const AboutSection = () => {
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>a Fitness and wellness enthusiast.</motion.h2>
+            <motion.h2 variants={titleAnim}>a Fitness enthusiast.</motion.h2>
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
@@ -30,7 +31,7 @@ const AboutSection = () => {
         <motion.button variants={fade}>View projects</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={sereya} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={ems} alt="Emilly Tiampati" />
       </Image>
       <Wave />
     </About>

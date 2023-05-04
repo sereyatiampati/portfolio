@@ -1,9 +1,11 @@
 import React from "react";
 //Import Icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
+import ai from "../img/artificial-intelligence.svg"
+import ml from "../img/machine-learning.svg"
+import is from "../img/confidential-information.svg"
+import fintech from "../img/fintech.svg"
+
 import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 //Styles
 import { About, Description, Image } from "../styles";
@@ -27,31 +29,31 @@ const ServicesSection = () => {
         <Cards>
           <Card>
             <div className="icon">
-              <img alt="icon" src={clock} />
-              <h3>Arificial Inteligence</h3>
+              <img alt="icon" src={ai} width="50" height="50"/>
+              <h3>Arificial Intelligence</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Replicating human intelligence in machines.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={teamwork} />
+              <img alt="icon" src={ml} width="50" height="50"/>
               <h3>Machine Learning</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Teaching computers to learn autonomously.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={diaphragm} />
+              <img alt="icon" src={is} width="50" height="50" />
               <h3>Information Security</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p> Ensure the safety and privacy of critical data</p>
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={money} />
-              <h3>Affordable</h3>
+              <img alt="icon" src={fintech} width="50" height="50" />
+              <h3>Fintech</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Delivery of Finacial services using Technology.</p>
           </Card>
         </Cards>
       </Description>

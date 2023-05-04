@@ -33,9 +33,10 @@ export const Image = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    width: 100%;
-    height: 80vh;
+    width: 80%;
+    height: 60vh;
     object-fit: cover;
+    border-radius: 50%;
   }
 `;
 
