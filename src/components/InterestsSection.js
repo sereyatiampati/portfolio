@@ -4,23 +4,19 @@ import ai from "../img/artificial-intelligence.svg"
 import ml from "../img/machine-learning.svg"
 import is from "../img/confidential-information.svg"
 import fintech from "../img/fintech.svg"
+import interest from "../img/interests.jpg"
 
-import home2 from "../img/home2.png";
 //Styles
-import { About, Description, Image } from "../styles";
+import { About, Description, InterestImage } from "../styles";
 import styled from "styled-components";
-import { scrollReveal } from "../animation";
-import { useScroll } from "./useScroll";
 
 const InterestsSection = () => {
-  const [element, controls] = useScroll();
+
   return (
-    <Services
-      // variants={scrollReveal}
-      // animate={controls}
-      // initial="hidden"
-      // ref={element}
-    >
+    <Interests>
+        <InterestImage>
+          <img alt="camera" src={interest} height = "500" width="450"/>
+        </InterestImage>
       <Description>
         <h2>
           Professional <span>interests</span>
@@ -56,14 +52,11 @@ const InterestsSection = () => {
           </Card>
         </Cards>
       </Description>
-      <Image>
-        <img alt="camera" src={home2} />
-      </Image>
-    </Services>
+    </Interests>
   );
 };
 
-const Services = styled(About)`
+const Interests = styled(About)`
   h2 {
     padding-bottom: 5rem;
   }
@@ -81,6 +74,7 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 20rem;
+  margin: 0 1.5rem;
   .icon {
     display: flex;
     align-items: center;

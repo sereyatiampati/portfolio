@@ -1,7 +1,6 @@
 import React from "react";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
 
 const ContactUs = () => {
@@ -17,7 +16,7 @@ const ContactUs = () => {
             <a target="_blank" href="https://github.com/sereyatiampati" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/sereyatiampati/" rel="noopener noreferrer" title="Linkedin"><i class="fa-brands fa-linkedin icons"></i></a>
         </p>
-        <p>Made by Emilly - as Herself</p>
+        <p>Made by Emilly Tiampati - as Herself</p>
       </div>
     </ContactStyle>
   );
@@ -40,6 +39,11 @@ const ContactStyle = styled(motion.div)`
    font-style: italic;
    width: 40%;
   }
+  @media screen and (max-width: 768px) {
+    h4 {
+      width: 80%;
+    }
+  }
   button{
     padding: 20px 80px;
     margin-top: 2.5rem;
@@ -57,30 +61,6 @@ const ContactStyle = styled(motion.div)`
     font-weight: 400;
   }
 `;
-const Title = styled.div`
-  margin-bottom: 0.5rem;
-  color: black;
-  text-align: center;
-  @media (max-width: 1500px) {
-    margin-top: 5rem;
-  }
-`;
-const Hide = styled.div`
-  overflow: hidden;
-`;
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
-`;
-const Social = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  text-align: center;
-  h2 {
-    margin: 2rem 0;
-  }
-`;
+
 
 export default ContactUs;

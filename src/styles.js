@@ -33,11 +33,23 @@ export const Image = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    width: 80%;
+    width: 80% auto;
     height: 60vh;
     object-fit: cover;
     border-radius: 50%;
   }
+`;
+
+export const InterestImage = styled.div`
+    flex: 1;
+    overflow: hidden;
+    z-index: 2;
+    img {
+        width: 100%auto;
+        height: 80vh;
+        object-fit: cover;
+
+    }
 `;
 
 export const Hide = styled.div`
