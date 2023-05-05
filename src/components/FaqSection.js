@@ -98,6 +98,7 @@ const Faq = styled(About)`
   .icons{
     font-size: 2.5rem;
     padding-right: 1.5rem;
+    color: #3273dc;
   }
   div.answer a {
     text-decoration: none;
