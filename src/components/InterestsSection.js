@@ -25,7 +25,7 @@ const InterestsSection = () => {
           <Card>
             <div className="icon">
               <img alt="icon" src={ai} width="50" height="50"/>
-              <h3>Arificial Intelligence</h3>
+              <h3>Artificial Intelligence</h3>
             </div>
             <p>Replicating human intelligence in machines.</p>
           </Card>
