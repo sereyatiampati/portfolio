@@ -3,6 +3,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
 import music from "../img/music.png";
+import property from "../img/property.png";
+import recipe from "../img/recipe.png";
+import auctioneer from "../img/auctioneer.png";
+import ecommerce from "../img/ecommerce.png";
+
 
 //Animations
 import { motion } from "framer-motion";
@@ -29,12 +34,12 @@ const Projects = () => {
                 <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/currency-exchange">
                     <Hide> 
-                        <motion.img variants = { photoAnim } src={music} alt="Screenshot of Currency Exchange home page"/>
+                        <motion.img variants = { photoAnim } src={auctioneer} alt="Screenshot of Currency Exchange home page" height='300'/>
                     </Hide>
                 </Link>
                 <p className="icon-links">
                   <a target="_blank" href="https://github.com/sereyatiampati/Auctioneers-ReactJS-Client" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
-                  <a target="_blank" href="https://auctioneers.vercel.app/" rel="noopener noreferrer" title="Live Link"><i class="fa-solid fa-link icons"></i></a>
+                 <button> <a target="_blank" href="https://auctioneers.vercel.app/" rel="noopener noreferrer" title="Live Link">Demo</a></button>
                 </p>
 
             </StyledProject>
@@ -43,11 +48,11 @@ const Projects = () => {
                 <motion.h2 variants = { fade }>Recipe Application</motion.h2>
                 <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/music-application">
-                    <motion.img variants = { photoAnim } src={music} alt="Screenshot of Music Application home page"/>
+                    <motion.img variants = { photoAnim } src={recipe} alt="Screenshot of Music Application home page"/>
                 </Link>
                 <p className="icon-links">
                   <a target="_blank" href="https://github.com/sereyatiampati/Recipe-app" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
-                  <a target="_blank" href="https://recipe-app-nu-seven.vercel.app/" rel="noopener noreferrer" title="Live Link"><i class="fa-solid fa-link icons"></i></a>
+                  <button> <a target="_blank" href="https://recipe-app-nu-seven.vercel.app/" rel="noopener noreferrer" title="Live Link">Demo</a></button>
                 </p>
             </StyledProject>
 
@@ -59,7 +64,7 @@ const Projects = () => {
                 </Link>
                 <p className="icon-links">
                   <a target="_blank" href="https://github.com/sereyatiampati/Recipe-app" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
-                  <a target="_blank" href="https://recipe-app-nu-seven.vercel.app/" rel="noopener noreferrer" title="Live Link"><i class="fa-solid fa-link icons"></i></a>
+                  <button> <a target="_blank" href="https://recipe-app-nu-seven.vercel.app/" rel="noopener noreferrer" title="Live Link">Demo</a></button>
                 </p>
             </StyledProject>
 
@@ -67,11 +72,11 @@ const Projects = () => {
                 <motion.h2 variants = { fade }>Property Management App</motion.h2>
                 <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/douglas-fir">
-                    <motion.img variants = { photoAnim } src={music} alt="Screenshot of Douglas Fir home page"/>
+                    <motion.img variants = { photoAnim } src={property} alt="Screenshot of Douglas Fir home page"/>
                 </Link>
                 <p className="icon-links">
                   <a target="_blank" href="https://github.com/sereyatiampati/Realtor-React-Front-end" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
-                  <a target="_blank" href="https://realtor-sereyatiampati.vercel.app/" rel="noopener noreferrer" title="Live Link"><i class="fa-solid fa-link icons"></i></a>
+                  <button> <a target="_blank" href="https://realtor-sereyatiampati.vercel.app/" rel="noopener noreferrer" title="Live Link">Demo</a></button>
                 </p>
             </StyledProject>
 
@@ -79,23 +84,11 @@ const Projects = () => {
                 <motion.h2 variants = { fade }>Shopping App</motion.h2>
                 <motion.div variants = { lineAnim } className="line"></motion.div>
                 <Link to = "/projects/douglas-fir">
-                    <motion.img variants = { photoAnim } src={music} alt="Screenshot of Douglas Fir home page"/>
+                    <motion.img variants = { photoAnim } src={ecommerce} alt="Screenshot of Douglas Fir home page"/>
                 </Link>
                 <p className="icon-links">
                   <a target="_blank" href="https://github.com/sereyatiampati/Recipe-app" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
-                  <a target="_blank" href="https://recipe-app-nu-seven.vercel.app/" rel="noopener noreferrer" title="Live Link"><i class="fa-solid fa-link icons"></i></a>
-                </p>
-            </StyledProject>
-
-            <StyledProject >
-                <motion.h2 variants = { fade }>Shopping App</motion.h2>
-                <motion.div variants = { lineAnim } className="line"></motion.div>
-                <Link to = "/projects/douglas-fir">
-                    <motion.img variants = { photoAnim } src={music} alt="Screenshot of Douglas Fir home page"/>
-                </Link>
-                <p className="icon-links">
-                  <a target="_blank" href="https://github.com/sereyatiampati/Recipe-app" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github icons"></i></a>
-                  <a target="_blank" href="https://recipe-app-nu-seven.vercel.app/" rel="noopener noreferrer" title="Live Link"><i class="fa-solid fa-link icons"></i></a>
+                  <button> <a target="_blank" href="http://modern-interior-design-app-by-sereya.vercel.app/" rel="noopener noreferrer" title="Live Link">Demo</a></button>
                 </p>
             </StyledProject>
 
@@ -145,6 +138,14 @@ h2 {
   font-size: 2.5rem;
   padding: 0 1.5rem;
   color: cornflowerblue;
+}
+button{
+  border: 1px solid #3273dc;
+  
+}
+a{
+  color: white;
+  text-decoration: none;
 }
 `;
 
