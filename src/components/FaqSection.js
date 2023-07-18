@@ -21,9 +21,8 @@ const FaqSection = () => {
               <ul>
                 <ul>
                   <li>
-                    Ruby on Rails: Developing and Securing RESTful APIs and RESTful Web Services with Rails, development of SOAP
-                    Web Services with Rails, application of the Ruby on Rails Framework for Enterprise Web applications.,
-                    bootstrapping Web Applications with Ruby on Rails MVC, implementation of database management with ActiveRecord, template rendering with ActionView, and request handling with ActionController. Unit testing using RSpec.{" "}
+                    Ruby on Rails: Developing and Securing RESTful APIs and RESTful Web Services with Rails, application of the Ruby on Rails Framework for Enterprise Web applications.,
+                    bootstrapping Web Applications with Ruby on Rails MVC, implementation of database management with ActiveRecord ORM, template rendering with ActionView, and request handling with ActionController. Unit testing using RSpec.{" "}
                   </li>
                   <li><cite>JavaScript</cite>: Client side application development with React JS, Bootstrap, HTML5, CSS3 and SASS.</li>
                 </ul>
